@@ -98,8 +98,10 @@ while 1:
 
 input()"""
 #ex 4---------------------------------------------------------------------------------------
+#-agare.io-------------------------
 from turtle import *
 import random
+turtle.delay (0) 
 maTortue1=turtle.Turtle()
 maTortue1.pencolor("red")
 maTortue2=turtle.Turtle()
@@ -107,24 +109,26 @@ maTortue2.pencolor("blue")
 maTortue3=turtle.Turtle()
 maTortue3.pencolor("green")
 
-def position (tortue):
+def postortue (tortue):
     X= random.randint(-300, 300)
     Y= random.randint(-300, 300)
-    tortue.penup
+    tortue.penup()
     tortue.goto(X,Y)
     tortue.pendown()
 
-position(maTortue1)
-position(maTortue2)
-position(maTortue3)
+postortue(maTortue1)
+postortue(maTortue2)
+postortue(maTortue3)
 
 while 1:
-    maTortue1.forward(40)
-    angle = random.randint(-90, 90)
+    maTortue1.forward(1)
+    angle = random.randint(-50, 50)
     maTortue1.left(angle)
-    maTortue2.forward(40)
-    angle = random.randint(-90, 90)
+    maTortue2.forward(1)
+    angle = random.randint(-50, 50)
     maTortue2.left(angle)
-    maTortue3.forward(40)
-    angle = random.randint(-90, 90)
+    maTortue3.forward(1)
+    angle = random.randint(-50, 50)
     maTortue3.left(angle)
+
+turtle.shapesize()
